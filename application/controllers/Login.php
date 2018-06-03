@@ -32,4 +32,18 @@ class Login extends CI_Controller {
 			return false;
 		}
 	}
+	public function register()
+	{
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('username','Username','trim|required|is_unique[login_admin.username]');
+		$this->form_validation->set_rules('password','Password','required|matches[re-password]');
+		$this->form_validation->set_rules('re-password','re-Password','required');
+		$this->form_validation->set_error_delimiters('<div class="alert alert-danger">','</div>');
+		if ($this->form_validation->run() == FALSE) {
+			$this->load->view('register');
+		} else {
+			$this->m_Login->register();
+			redirect('Login');
+		}
+	}
 }

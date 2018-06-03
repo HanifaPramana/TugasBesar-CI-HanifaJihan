@@ -14,4 +14,13 @@ class m_Login extends CI_Model {
 		}
 		return $data;
 	}
+	public function register()
+	{
+		$data = array(
+			'username'=>$this->input->post('username'),
+			'password'=>md5($this->input->post('password')),
+			'level' => '2'
+		);
+		$this->db->insert('login_admin',$data);
+	}
 }
