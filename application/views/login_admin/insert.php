@@ -30,36 +30,31 @@
           </div>
           <div class="row">
             <div class="col">
-              <a href="<?php echo base_url('penghuni/insert') ?>" class="btn btn-sm btn-primary mb-3">Input</a>
+              <a href="<?php echo base_url('login_admin/insert') ?>" class="btn btn-sm btn-primary mb-3">Input</a>
               <div class="card">
               <div class="card-body">
-                <table class="table table-hover table-bordered">
-              <thead>
-                <th>#</th>
-                <th>Nama</th>
-                <th>Alamat</th>
-                <th>No Tlp</th>
-                <th>Username</th>
-                <th>Status</th>
-                <th>Action</th>
-              </thead>
-              <tbody>
-                <?php foreach ($penghuni as $key => $value): ?>
-                  <tr>
-                    <td><?php echo ++$key ?></td>
-                    <td><?php echo $value['nama'] ?></td>
-                    <td><?php echo $value['alamat'] ?></td>
-                    <td><?php echo $value['notelp'] ?></td>
-                    <td><?php echo $value['username'] ?></td>
-                    <td><?php echo $value['status'] ?></td>
-                    <td>
-                      <a href="<?php echo base_url('penghuni/update/'.$value['id']) ?>" class="btn btn-sm btn-success">Update</a>
-                      <a href="<?php echo base_url('penghuni/delete/'.$value['id']) ?>" class="btn btn-sm btn-danger">Delete</a>
-                    </td>
-                  </tr>
-                <?php endforeach ?>
-              </tbody>
-            </table>
+                <?php echo validation_errors(); ?>
+               <?php echo form_open('login_admin/insert') ?>
+               <div class="form-group">
+                 <label for="">Username</label>
+                 <input type="text" name="username" class="form-control">
+               </div>
+               <div class="form-group">
+                 <label for="">Password</label>
+                 <input type="text" name="password" class="form-control">
+               </div>
+               <div class="form-group">
+                <label>Level</label>
+                <select name="level" class="form-control">
+                  <option>------</option>
+                  <option value="1">Pemilik Kos</option>
+                  <option value="2">Penjaga Kos</option>
+                </select>
+                 
+               </div>
+               
+               <input type="submit" value="Input" class="btn btn-primary">
+               <?php echo form_close() ?>
               </div>
             </div>
             </div>

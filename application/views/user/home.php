@@ -82,7 +82,7 @@
 								<li><a href="about.html">About</a></li>
 								<li><a href="contact.html">Contact</a></li>
 								<li class="btn-cta"><a href="#">Sign Up</a></li>
-								<li class="btn-cta"><a href="#">Login</a></li>
+								<li class="btn-cta"><a href="<?php echo base_url('Login') ?>">Login</a></li>
 							</ul>
 						</div>
 					</div>

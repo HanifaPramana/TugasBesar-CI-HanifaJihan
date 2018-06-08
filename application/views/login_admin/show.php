@@ -30,31 +30,27 @@
           </div>
           <div class="row">
             <div class="col">
-              <a href="<?php echo base_url('penghuni/insert') ?>" class="btn btn-sm btn-primary mb-3">Input</a>
+              <a href="<?php echo base_url('login_admin/insert') ?>" class="btn btn-sm btn-primary mb-3">Input</a>
               <div class="card">
               <div class="card-body">
                 <table class="table table-hover table-bordered">
               <thead>
                 <th>#</th>
-                <th>Nama</th>
-                <th>Alamat</th>
-                <th>No Tlp</th>
                 <th>Username</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th>Password</th>
+                <th>Level</th>
+                <th>Aksi</th>
               </thead>
               <tbody>
-                <?php foreach ($penghuni as $key => $value): ?>
+                <?php foreach ($login_admin as $key => $value): ?>
                   <tr>
                     <td><?php echo ++$key ?></td>
-                    <td><?php echo $value['nama'] ?></td>
-                    <td><?php echo $value['alamat'] ?></td>
-                    <td><?php echo $value['notelp'] ?></td>
                     <td><?php echo $value['username'] ?></td>
-                    <td><?php echo $value['status'] ?></td>
+                    <td><?php echo $value['password'] ?></td>
+                    <td><?php echo $value['level'] ?></td>
                     <td>
-                      <a href="<?php echo base_url('penghuni/update/'.$value['id']) ?>" class="btn btn-sm btn-success">Update</a>
-                      <a href="<?php echo base_url('penghuni/delete/'.$value['id']) ?>" class="btn btn-sm btn-danger">Delete</a>
+                      <a href="<?php echo base_url('login_admin/update/'.$value['id']) ?>" class="btn btn-sm btn-success">Update</a>
+                      <a href="<?php echo base_url('login_admin/delete/'.$value['id']) ?>" class="btn btn-sm btn-danger">Delete</a>
                     </td>
                   </tr>
                 <?php endforeach ?>
