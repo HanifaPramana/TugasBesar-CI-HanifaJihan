@@ -34,7 +34,7 @@
               <div class="card">
               <div class="card-body">
                 <?php echo validation_errors(); ?>
-               <?php echo form_open('Kamar/update/'.$kamar_row['id']) ?>
+               <?php echo form_open_multipart('Kamar/update/'.$kamar_row['id']) ?>
                <div class="form-group">
                  <label for="">Nomor Kamar</label>
                  <input type="text" name="no_kamar" class="form-control" value="<?php echo $kamar_row['no_kamar'] ?>">
@@ -47,6 +47,11 @@
                  <label for="">Biaya per bulan</label>
                  <input type="number" step="1000" name="biaya_per_bulan" class="form-control" value="<?php echo $kamar_row['biaya_per_bulan'] ?>">
                </div>
+               <div class="form-group">
+    <label for="image">Image</label>
+    <input type="file" name="image">
+    <?php echo (isset($message) ? $message : ''); ?>
+  </div>
                <input type="submit" value="Input" class="btn btn-primary">
                <?php echo form_close() ?>
               </div>

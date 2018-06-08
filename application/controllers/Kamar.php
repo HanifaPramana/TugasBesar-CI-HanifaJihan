@@ -24,8 +24,14 @@ class Kamar extends CI_Controller {
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('kamar/insert');
 		} else {
-			$this->m_Kamar->insert();
-			redirect('Kamar');
+			$upload = $this->m_Kamar->upload();
+			if($upload['result'] == "success"){ 
+				$this->m_Kamar->insert($upload['file']['file_name']);
+				redirect('Kamar');
+			}else{
+				$data['message'] = $upload['error'];
+				$this->load->view('kamar/insert',$data); 
+			}
 		}
 	}
 	public function update($id)
@@ -38,8 +44,22 @@ class Kamar extends CI_Controller {
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('kamar/update',$data);
 		} else {
-			$this->m_Kamar->update($id);
-			redirect('Kamar');
+			if ($_FILES['image']['name'] == "")
+			{
+				$this->m_Kamar->updateData($id);
+				redirect('kamar');
+			}
+			else
+			{
+				$upload = $this->m_Kamar->upload();
+				if($upload['result'] == "success"){ 
+					$this->m_Kamar->update($id,$upload['file']['file_name']);
+					redirect('kamar');
+				}else{ 
+					$data['error_upload'] = $upload['error'];
+					$this->load->view('kamar/update',$data);
+				}
+			}
 		}
 	}
 	public function delete($id)
