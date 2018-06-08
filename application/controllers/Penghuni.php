@@ -17,6 +17,7 @@ class Penghuni extends CI_Controller {
 
 	public function insert()
 	{
+		$data['kamar'] = $this->m_penghuni->select_kamar();
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('nama',"Nama penghuni",'required');
 		$this->form_validation->set_rules('alamat',"Alamat",'required');
@@ -24,7 +25,7 @@ class Penghuni extends CI_Controller {
 		$this->form_validation->set_value('username', "Username",'required');
 		$this->form_validation->set_value('status',"Status",'required');
 		if ($this->form_validation->run() == FALSE) {
-			$this->load->view('penghuni/insert');
+			$this->load->view('penghuni/insert',$data);
 		} else {
 			$this->m_penghuni->insert();
 			redirect('penghuni');
@@ -32,6 +33,7 @@ class Penghuni extends CI_Controller {
 	}
 	public function update($id)
 	{
+		$data['kamar'] = $this->m_penghuni->select_kamar();
 		$data['penghuni_row'] = $this->m_penghuni->select_id($id);
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('nama',"Nama penghuni",'required');

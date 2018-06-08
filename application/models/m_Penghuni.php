@@ -12,6 +12,10 @@ class m_Penghuni extends CI_Model {
 	{
 		return $this->db->where('id',$id)->get('penghuni_kos')->result_array()[0];
 	}
+	public function select_kamar()
+	{
+		return $this->db->get('kamar')->result_array();
+	}
 	public function insert()
 	{
 		$data = $this->input->post();

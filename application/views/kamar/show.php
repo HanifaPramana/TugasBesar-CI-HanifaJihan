@@ -39,6 +39,7 @@
                 <th>No Kamar</th>
                 <th>Fasilitas</th>
                 <th>Biaya Per Bulan</th>
+                <th>Status</th>
                 <th>Aksi</th>
               </thead>
               <tbody>
@@ -48,6 +49,7 @@
                     <td><?php echo $value['no_kamar'] ?></td>
                     <td><?php echo $value['fasilitas'] ?></td>
                     <td><?php echo $value['biaya_per_bulan'] ?></td>
+                    <td><?php echo ($value['nama']!=null ? 'Tidak tersedia':'Tersedia');  ?></td>  
                     <td>
                       <a href="<?php echo base_url('Kamar/update/'.$value['id']) ?>" class="btn btn-sm btn-success">Update</a>
                       <a href="<?php echo base_url('Kamar/delete/'.$value['id']) ?>" class="btn btn-sm btn-danger">Delete</a>

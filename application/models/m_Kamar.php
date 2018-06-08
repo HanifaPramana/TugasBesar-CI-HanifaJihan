@@ -5,7 +5,10 @@ class m_Kamar extends CI_Model {
 
 	public function select()
 	{
-		return $this->db->get('kamar')->result_array();
+		$this->db->select("kamar.*,penghuni_kos.nama");
+		$this->db->from("kamar");
+		$this->db->join("penghuni_kos","kamar.id=penghuni_kos.fk_id_kamar","left");
+		return $this->db->get()->result_array();
 	}
 
 	public function select_id($id)
