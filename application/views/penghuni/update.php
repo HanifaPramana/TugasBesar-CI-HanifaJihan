@@ -45,7 +45,7 @@
                </div>
               <div class="form-group">
                  <label for="">No Tlp</label>
-                 <input type="text" name="alamat" class="form-control" value="<?php echo $penghuni_row['notelp'] ?>">
+                 <input type="text" name="notelp" class="form-control" value="<?php echo $penghuni_row['notelp'] ?>">
                </div>
                <div class="form-group">
                  <label for="">Username</label>
@@ -54,6 +54,14 @@
                <div class="form-group">
                  <label for="">Status</label>
                  <input type="text" name="Status" class="form-control" value="<?php echo $penghuni_row['status'] ?>">
+               </div>
+               <div class="form-group">
+                 <label for="">Kamar</label>
+                 <select name="fk_id_kamar" id="" class="form-control">
+                   <?php foreach ($kamar as $key => $value): ?>
+                     <option value="<?php echo $value['id'] ?>"><?php echo $value['no_kamar'] ?></option>
+                   <?php endforeach ?>
+                 </select>
                </div>
                <input type="submit" value="Input" class="btn btn-primary">
                <?php echo form_close() ?>

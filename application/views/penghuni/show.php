@@ -41,6 +41,7 @@
                 <th>No Tlp</th>
                 <th>Username</th>
                 <th>Status</th>
+                <th>Nomor Kamar</th>
                 <th>Action</th>
               </thead>
               <tbody>
@@ -52,7 +53,9 @@
                     <td><?php echo $value['notelp'] ?></td>
                     <td><?php echo $value['username'] ?></td>
                     <td><?php echo $value['status'] ?></td>
+                    <td><?php echo ($value['no_kamar'] != null ? $value['no_kamar'] : 'Telah Keluar') ?></td>
                     <td>
+                      <a href="<?php echo base_url('penghuni/update_keluar/'.$value['id']) ?>" class="btn btn-sm btn-warning">Exit</a>
                       <a href="<?php echo base_url('penghuni/update/'.$value['id']) ?>" class="btn btn-sm btn-success">Update</a>
                       <a href="<?php echo base_url('penghuni/delete/'.$value['id']) ?>" class="btn btn-sm btn-danger">Delete</a>
                     </td>

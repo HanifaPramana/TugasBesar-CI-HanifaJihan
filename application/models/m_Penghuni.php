@@ -5,7 +5,10 @@ class m_Penghuni extends CI_Model {
 
 	public function select()
 	{
-		return $this->db->get('penghuni_kos')->result_array();
+		$this->db->select('penghuni_kos.*,kamar.no_kamar');
+		$this->db->from('penghuni_kos');
+		$this->db->join('kamar','penghuni_kos.fk_id_kamar=kamar.id','left');
+		return $this->db->get()->result_array();
 	}
 
 	public function select_id($id)
@@ -28,7 +31,13 @@ class m_Penghuni extends CI_Model {
 		$this->db->where('id',$id);
 		$this->db->update('penghuni_kos',$data);
 	}
-
+	public function keluar_penghuni($id)
+	{
+		$this->db->where('id',$id);
+		$data['status'] = 0;
+		$data['fk_id_kamar'] = null;
+		$this->db->update('penghuni_kos',$data);
+	}
 	public function delete($id)
 	{
 		$this->db->where('id',$id);

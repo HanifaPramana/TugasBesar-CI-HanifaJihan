@@ -48,6 +48,11 @@ class Penghuni extends CI_Controller {
 			redirect('penghuni');
 		}
 	}
+	public function update_keluar($id)
+	{
+		$this->m_penghuni->keluar_penghuni($id);
+		redirect('penghuni','refresh');
+	}
 	public function delete($id)
 	{
 		$this->m_penghuni->delete($id);
