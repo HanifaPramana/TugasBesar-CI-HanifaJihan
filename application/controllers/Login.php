@@ -23,12 +23,48 @@ class Login extends CI_Controller {
 	public function proses($username)
 	{
 		$password = md5($this->input->post('password'));
-		$aut = $this->m_Login->autentifikasi($username,$password);
-		if($aut['num_rows'] == 1){
-			$this->session->set_userdata($aut['result']);
+		$validasi = $this->db->where('username',$username)->where('password',$password)->get('login_admin');
+		if($validasi->num_rows() == 1){
+			$data = $validasi->result_array()[0];
+			$userdata = array(
+				'username' => $data['username'],
+				'level' => $data['level']
+			);
+			$this->session->set_userdata('logged_in',$userdata);
 			return true;
 		}else{
 			$this->form_validation->set_message('proses','Username and Password tidak valid');
+			return false;
+		}
+	}
+	public function penghuni()
+	{
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('username','Username','trim|required|callback_penghuniproses');
+		$this->form_validation->set_rules('password','Password','required');
+		$this->form_validation->set_error_delimiters('<div class="alert alert-danger">','</div>');
+		if ($this->form_validation->run() == FALSE) {
+			$this->load->view('login_penghuni');
+		} else {
+			redirect('Home');
+		}
+	}
+	public function penghuniproses($username)
+	{
+		$password = md5($this->input->post('password'));
+		$validasi = $this->db->where('username',$username)->where('password',$password)->get('penghuni_kos');
+		if($validasi->num_rows() == 1){
+			$data = $validasi->result_array()[0];
+			$userdata = array(
+				'nama' => $data['nama'],
+				'email' => $data['email'],
+				'username' => $data['username'],
+				'level' => '3'
+			);
+			$this->session->set_userdata('logged_in',$userdata);
+			return true;
+		}else{
+			$this->form_validation->set_message('penghuniproses','Username and Password tidak valid');
 			return false;
 		}
 	}
@@ -45,5 +81,10 @@ class Login extends CI_Controller {
 			$this->m_Login->register();
 			redirect('Login');
 		}
+	}
+	public function logout()
+	{
+		$this->session->unset_userdata('logged_in');
+		redirect('Home','refresh');
 	}
 }

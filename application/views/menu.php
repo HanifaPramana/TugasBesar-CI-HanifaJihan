@@ -22,16 +22,16 @@
                 <span class="availability-status online"></span>             
               </div>
               <div class="nav-profile-text">
-                <p class="mb-1 text-black">David Greymaax</p>
+                <p class="mb-1 text-black"><?php echo $this->session->userdata('logged_in')['username']; ?></p>
               </div>
             </a>
             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item" href="#">
                 <i class="mdi mdi-cached mr-2 text-success"></i>
-                Activity Log
+                Level = <?php echo $this->session->userdata('logged_in')['level'] ?>
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="<?php echo base_url('Login/logout') ?>">
                 <i class="mdi mdi-logout mr-2 text-primary"></i>
                 Signout
               </a>
@@ -182,21 +182,21 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url();?>/login_admin">
+            <a class="nav-link" href="<?php echo site_url();?>/Login_admin">
               <span class="menu-title">Data Admin</span>
 
               <i class="mdi mdi-account-key menu-icon"></i>
             </a>
           </li>
          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url();?>/kamar">
+            <a class="nav-link" href="<?php echo site_url();?>/Kamar">
               <span class="menu-title">Data Kamar</span>
 
               <i class="mdi mdi-table-large menu-icon"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url();?>/penghuni">
+            <a class="nav-link" href="<?php echo site_url();?>/Penghuni">
               <span class="menu-title">Data Penghuni</span>
               <i class="mdi mdi-table-large menu-icon"></i>
             </a>

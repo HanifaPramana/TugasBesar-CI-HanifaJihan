@@ -39,6 +39,7 @@
                 <th>Nama</th>
                 <th>Alamat</th>
                 <th>No Tlp</th>
+                <th>Email</th>
                 <th>Username</th>
                 <th>Status</th>
                 <th>Nomor Kamar</th>
@@ -51,6 +52,7 @@
                     <td><?php echo $value['nama'] ?></td>
                     <td><?php echo $value['alamat'] ?></td>
                     <td><?php echo $value['notelp'] ?></td>
+                    <td><?php echo $value['email'] ?></td>
                     <td><?php echo $value['username'] ?></td>
                     <td><?php echo $value['status'] ?></td>
                     <td><?php echo ($value['no_kamar'] != null ? $value['no_kamar'] : 'Telah Keluar') ?></td>

@@ -10,7 +10,7 @@ class m_Login extends CI_Model {
 		$query = $this->db->get('login_admin');
 		$data['num_rows'] = $query->num_rows();
 		if($data['num_rows'] == 1){
-			$data['result'] = $query->result();
+			$data['result'] = $query->result()[0];
 		}
 		return $data;
 	}

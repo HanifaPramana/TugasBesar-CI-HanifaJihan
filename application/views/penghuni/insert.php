@@ -48,8 +48,16 @@
                  <input type="text"  name="notelp" class="form-control">
                </div>
                <div class="form-group">
+                 <label for="">Email</label>
+                 <input type="text"  name="email" class="form-control">
+               </div>
+               <div class="form-group">
                  <label for="">Username</label>
                  <input type="text"  name="username" class="form-control">
+               </div>
+               <div class="form-group">
+                 <label for="">Password</label>
+                 <input type="text"  name="password" class="form-control">
                </div>
                <div class="form-group">
                  <label for="">Status</label>

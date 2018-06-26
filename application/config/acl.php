@@ -57,23 +57,39 @@ $acl = array(
 
 	/* WELCOME */
 
-	'Login/index' => array(
+	'Home' => array(
 		'public'
 	),
-	'pegawai' => array(
-		'user' => true,
-		'admin' => true,
+	'Kamar' => array(
+		'1' => true,
+		'2' => true,
+		'3' => true
 	),
-	'jabatan' => array(
-		'user' => false,
-		'admin' => true,
+	'Penghuni' => array(
+		'1' => true,
+		'2' => true,
+		'3' => false
 	),
-	'anak' => array(
-		'user' => true,
-		'admin' => true,
+	'Login_admin' => array(
+		'1' => true,
+		'2' => false,
+		'3' => false
+	),
+	'kamar' => array(
+		'1' => true,
+		'2' => true,
+		'3' => true
+	),
+	'penghuni' => array(
+		'1' => true,
+		'2' => true,
+		'3' => false
+	),
+	'login_admin' => array(
+		'1' => true,
+		'2' => false,
+		'3' => false
 	)
-
-
 
 );
 

@@ -48,8 +48,16 @@
                  <input type="text" name="notelp" class="form-control" value="<?php echo $penghuni_row['notelp'] ?>">
                </div>
                <div class="form-group">
+                 <label for="">email</label>
+                 <input type="text" name="email" class="form-control" value="<?php echo $penghuni_row['email'] ?>">
+               </div>
+               <div class="form-group">
                  <label for="">Username</label>
                  <input type="text" name="username" class="form-control" value="<?php echo $penghuni_row['username'] ?>">
+               </div>
+               <div class="form-group">
+                 <label for="">password</label>
+                 <input type="text" name="password" class="form-control" value="<?php echo $penghuni_row['password'] ?>">
                </div>
                <div class="form-group">
                  <label for="">Status</label>
