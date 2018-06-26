@@ -7,6 +7,7 @@ class Pembayaran extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('m_Pembayaran');
+		$this->load->library('pdf');
 		if ($this->session->userdata('logged_in')) {
 			$session_data = $this->session->userdata('logged_in');
 			$data['username'] = $session_data['username'];
@@ -29,6 +30,13 @@ class Pembayaran extends CI_Controller {
 		$data['list_data'] = $this->m_Pembayaran->get_data();
 		$this->load->view('pembayaran/show',$data);
 	}
+	function generate_to_pdf(){
+ $data['data']=$this->m_Pembayaran->get_data();
+$this->pdf->load_view('pembayaran/print',$data);
+$this->pdf->render();
+$this->pdf->stream("laporan.pdf");
+}
+
 	public function set_lunas($id)
 	{
 		$this->m_Pembayaran->set_lunas($id);

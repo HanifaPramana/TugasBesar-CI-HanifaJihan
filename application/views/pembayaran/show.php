@@ -30,7 +30,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <a href="<?php echo base_url('Kamar/insert') ?>" class="btn btn-sm btn-primary mb-3">Input</a>
+              <a href="<?php echo base_url('Pembayaran/generate_to_pdf') ?>" class="btn btn-sm btn-primary mb-3">Print</a>
               <div class="card">
               <div class="card-body">
                 <table class="table table-hover table-bordered">
