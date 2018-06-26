@@ -103,65 +103,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Detail Menginap</h2>
-						<p>Anda telah tinggal <?php echo $list->lama_tinggal ?> Bulan</p>
-						<p>Yang telah anda bayar <?php echo (int) $list->jumlah_lunas ?> Bulan</p>
-						<p>Anda menunggak <?php echo $tunggak = $list->lama_tinggal-$list->jumlah_lunas ?> Bulan</p>
-						<?php if ($tunggak > 0): ?>
-							<h1>Pembayaran</h1>
-						<?php echo form_open('Home/bayar'); ?>
-						<div class="form-group">
-							<label for="">Jumlah Bulan</label>
-							<select name="jumlah_bulan" id="" class="form-control">
-								<?php 
-								$i = 1;
-								while ($i<=$tunggak) {
-								    ?>
-									<option value="<?php echo $i ?>"><?php echo $i ?></option>
-								    <?php
-								    $i++;
-								} ?>
-							</select>
-						</div>
-						<input type="submit" value="bayar" class="btn btn-primary">
-						<?php echo form_close(); ?>
-						<?php endif ?>
+						<h2>Pembayaran</h2>
+						<p>No : <?php echo $pembayaran->no_pembayaran ?></p>
+						<p>Kode Token : <?php echo $pembayaran->kode_token ?></p>
+						<p>Jumlah Bulan : <?php echo $pembayaran->jumlah_bulan ?></p>
+						<p>Biaya per bulan : <?php echo $pembayaran->harga_sewa ?></p>
+						<p>Total : <?php echo $pembayaran->jumlah_bulan*$pembayaran->harga_sewa ?></p>
+						<p>Statys : <?php echo ($pembayaran->status == 0 ? 'Belum Dibayar' : 'Lunas') ?></p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="colorlib-services">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>List Pembayaran</h2>
-						<table class="table table-hover table-inverse">
-							<thead>
-								<tr>
-									<th>No_Pembayaran</th>
-									<th>Jumlah Bulan</th>
-									<th>Status</th>
-									<th>Action</th>
-								</tr>
-							</thead>
-							<tbody>
-								<?php foreach ($data_pembayaran as $value): ?>
-									<tr>
-										<td><?php echo $value->no_pembayaran ?></td>
-										<td><?php echo $value->jumlah_bulan ?></td>
-										<td><?php echo ($value->status == 0 ? 'belum' : 'lunas') ?></td>
-										<td>
-											<a href="<?php echo base_url('Home/pembayaran/'.$value->id) ?>" class="btn btn-primary">Detail</a>
-										</td>
-									</tr>
-								<?php endforeach ?>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div id="colorlib-work">
 			<div class="container-fluid">
 				<div class="row">

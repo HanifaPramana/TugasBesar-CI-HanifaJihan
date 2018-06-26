@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	<title>Kost Bidadari</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
@@ -64,21 +65,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2 text-center">
-							<div id="colorlib-logo"><a href="index.html">Kost Bidadari</a></div>
+							<div id="colorlib-logo";"><a href="index.html"></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
 								<li class="active"><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="work.html">Work</a>
-									<ul class="dropdown">
-										<li><a href="#">Limited Work</a></li>
-										<li><a href="#">Accessible Work</a></li>
-										<li><a href="#">Original Work</a></li>
-									</ul>
-								</li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="blog.html">Blog</a></li>
 								<li><a href="about.html">About</a></li>
 								<li><a href="contact.html">Contact</a></li>
 								<?php if ($this->session->userdata('logged_in') == null): ?>
@@ -103,8 +94,9 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="intro">
+							<img src="<?php echo base_url()?>assets/img/logokost.png" width="280px" ><br><br>
 							<h1>Selamat Datang, Perantau</h1>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line</p>
+							<p>Kos Kosan Fasilitas Lengkap Sederhana dan Nyaman di Kota Malang</p>
 							
 						</div>
 					</div>

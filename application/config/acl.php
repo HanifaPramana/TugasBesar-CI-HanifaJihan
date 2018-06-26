@@ -89,6 +89,16 @@ $acl = array(
 		'1' => true,
 		'2' => false,
 		'3' => false
+	),
+	'Pembayaran' => array(
+		'1' => true,
+		'2' => true,
+		'3' => false
+	),
+	'pembayaran' => array(
+		'1' => true,
+		'2' => true,
+		'3' => false
 	)
 
 );

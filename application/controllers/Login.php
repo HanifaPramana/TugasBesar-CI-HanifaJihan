@@ -27,6 +27,7 @@ class Login extends CI_Controller {
 		if($validasi->num_rows() == 1){
 			$data = $validasi->result_array()[0];
 			$userdata = array(
+				'id' => $data['id'],
 				'username' => $data['username'],
 				'level' => $data['level']
 			);
@@ -56,6 +57,7 @@ class Login extends CI_Controller {
 		if($validasi->num_rows() == 1){
 			$data = $validasi->result_array()[0];
 			$userdata = array(
+				'id' => $data['id'],
 				'nama' => $data['nama'],
 				'email' => $data['email'],
 				'username' => $data['username'],
