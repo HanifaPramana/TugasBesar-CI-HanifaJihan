@@ -5,7 +5,8 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('user/home');
+		$data['kamar'] = $this->db->get('kamar')->result();
+		$this->load->view('user/home',$data);
 	}
 	public function admin()
 	{

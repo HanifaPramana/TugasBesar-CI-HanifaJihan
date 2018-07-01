@@ -41,7 +41,12 @@
                </div>
                <div class="form-group">
                  <label for="">Fasilitas</label>
-                 <input type="text" name="fasilitas" class="form-control" value="<?php echo $kamar_row['fasilitas'] ?>">
+                 <select class="form-control" name="fasilitas">
+                   <option>Kamar Besar</option>
+                   <option>Kamar Standart</option>
+                   <option>Kamar Kecil</option>
+                 </select>
+                 <script type="text/javascript">$("select[name='fasilitas']").val("<?php echo $kamar_row['fasilitas'] ?>")</script>
                </div>
                <div class="form-group">
                  <label for="">Biaya per bulan</label>

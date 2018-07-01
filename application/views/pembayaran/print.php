@@ -2,7 +2,7 @@
 <title>Report Table</title></head>
 <body>
 <h2><center>Biodata Mahasiswa</center></h2>
-<table>
+<table border="1" style="width: 100%">
 <thead>
 <tr>
  <th><center>No</center></th>

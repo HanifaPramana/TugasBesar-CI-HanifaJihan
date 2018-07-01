@@ -132,41 +132,73 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>How It Works</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+						<h2>Fasilitas</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 text-center animate-box">
 						<div class="services">
 							<span class="icon">
-								<i class="icon-lightbulb"></i>
+								<i class="icon-power"></i>
 							</span>
 							<div class="desc">
-								<h3>User Experienced</h3>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line</p>
+								<h3>Listrik prabayar 900 watt</h3>
+								<p></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 text-center animate-box">
 						<div class="services">
 							<span class="icon">
-								<i class="icon-tools"></i>
+								<i class="icon-connection"></i>
 							</span>
 							<div class="desc">
-								<h3>Virtual Design</h3>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line</p>
+								<h3>Free wifi indihome 10 mbps</h3>
+								<p></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 text-center animate-box">
 						<div class="services">
 							<span class="icon">
-								<i class="icon-map"></i>
+								<i class="icon-tv"></i>
 							</span>
 							<div class="desc">
-								<h3>Design &amp; Research</h3>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line</p>
+								<h3>Tv Led 32 inch</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-mug"></i>
+							</span>
+							<div class="desc">
+								<h3>Free kopi dan teh tiap pagi</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-bullhorn"></i>
+							</span>
+							<div class="desc">
+								<h3>CCTV di Tempat Parkir dan Kolidor Kost</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-aid-kit"></i>
+							</span>
+							<div class="desc">
+								<h3>Tersedia Obat-Obatan</h3>
+								<p></p>
 							</div>
 						</div>
 					</div>
@@ -217,8 +249,8 @@
 							<div class="desc">
 								<div class="display-t">
 									<div class="display-tc">
-										<span>Illustration</span>
-										<h2>Work Name</h2>
+										<span>Fasilitas</span>
+										<h2>Dapur</h2>
 									</div>
 								</div>
 							</div>
@@ -229,8 +261,8 @@
 							<div class="desc">
 								<div class="display-t">
 									<div class="display-tc">
-										<span>Illustration</span>
-										<h2>Work Name</h2>
+										<span>Fasilitas</span>
+										<h2>Kamar Mandi</h2>
 									</div>
 								</div>
 							</div>
@@ -241,8 +273,8 @@
 							<div class="desc">
 								<div class="display-t">
 									<div class="display-tc">
-										<span>Illustration</span>
-										<h2>Work Name</h2>
+										<span>Fasilitas</span>
+										<h2>Ruang TV</h2>
 									</div>
 								</div>
 							</div>
@@ -303,51 +335,21 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<div class="admin">
-								<p><span><i class="icon-user2"></i> by: Mark Harris</span> <span><a href="#"><i class="icon-bubble3"></i> 10</a></span></p>
-							</div>
-							<div class="desc2">
-								<h2><a href="blog.html">Making A Website from scratch</a></h2>
-							</div>
-							<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets_user/') ?>images/blog-1.jpg);"></a>
-							<div class="desc">
-								<p class="meta"><span class="day">10</span><span class="month">Mar</span></p>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<div class="admin">
-								<p><span><i class="icon-user2"></i> by: Mark Harris</span> <span><a href="#"><i class="icon-bubble3"></i> 10</a></span></p>
-							</div>
-							<div class="desc2">
-								<h2><a href="blog.html">Making A Website from scratch</a></h2>
-							</div>
-							<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets_user/') ?>images/blog-2.jpg);"></a>
-							<div class="desc">
-								<p class="meta"><span class="day">09</span><span class="month">Mar</span></p>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<div class="admin">
-								<p><span><i class="icon-user2"></i> by: Mark Harris</span> <span><a href="#"><i class="icon-bubble3"></i> 10</a></span></p>
-							</div>
-							<div class="desc2">
-								<h2><a href="blog.html">Making A Website from scratch</a></h2>
-							</div>
-							<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets_user/') ?>images/blog-3.jpg);"></a>
-							<div class="desc">
-								<p class="meta"><span class="day">08</span><span class="month">Mar</span></p>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</article>
-					</div>
+					<?php foreach ($kamar as $key => $value): ?>
+						<div class="col-md-4 animate-box">
+							<article class="article-entry">
+								<div class="desc2">
+									<h2><a href="blog.html">Kamar <?php echo $value->no_kamar ?></a></h2>
+								</div>
+								<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets/img/kamar/'.$value->image) ?>);"></a>
+								<div class="desc">
+									<p class="meta"><span class="day">No</span><span class="month"><?php echo $value->no_kamar ?></span></p>
+									<p>Fasilitas : <?php echo $value->fasilitas ?></p>
+									<p>Biaya per bulan : <?php echo $value->biaya_per_bulan ?></p>
+								</div>
+							</article>
+						</div>
+					<?php endforeach ?>					
 				</div>
 			</div>
 		</div>

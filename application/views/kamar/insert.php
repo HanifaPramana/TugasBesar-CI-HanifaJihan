@@ -41,7 +41,11 @@
                </div>
                <div class="form-group">
                  <label for="">Fasilitas</label>
-                 <input type="text" name="fasilitas" class="form-control">
+                 <select class="form-control" name="fasilitas">
+                   <option>Kamar Besar</option>
+                   <option>Kamar Standart</option>
+                   <option>Kamar Kecil</option>
+                 </select>
                </div>
                <div class="form-group">
                  <label for="">Biaya per bulan</label>
