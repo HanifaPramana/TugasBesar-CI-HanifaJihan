@@ -213,8 +213,8 @@
 							<div class="desc">
 								<div class="display-t">
 									<div class="display-tc">
-										<span>Illustration</span>
-										<h2>Work Name</h2>
+										<span>Fasilitas</span>
+										<h2>Ruang Makan</h2>
 									</div>
 								</div>
 							</div>
@@ -225,8 +225,8 @@
 							<div class="desc">
 								<div class="display-t">
 									<div class="display-tc">
-										<span>Illustration</span>
-										<h2>Work Name</h2>
+										<span>Fasilitas</span>
+										<h2>Ruang TV</h2>
 									</div>
 								</div>
 							</div>
@@ -234,18 +234,6 @@
 					</div>
 					<div class="col-md-4 no-gutters text-center animate-box">
 						<a href="work.html" class="work-entry" style="background-image: url(<?php echo base_url('assets_user/') ?>images/work-3.jpg);">
-							<div class="desc">
-								<div class="display-t">
-									<div class="display-tc">
-										<span>Illustration</span>
-										<h2>Work Name</h2>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 no-gutters text-center animate-box">
-						<a href="work.html" class="work-entry" style="background-image: url(<?php echo base_url('assets_user/') ?>images/work-4.jpg);">
 							<div class="desc">
 								<div class="display-t">
 									<div class="display-tc">
@@ -257,7 +245,7 @@
 						</a>
 					</div>
 					<div class="col-md-4 no-gutters text-center animate-box">
-						<a href="work.html" class="work-entry" style="background-image: url(<?php echo base_url('assets_user/') ?>images/work-5.jpg);">
+						<a href="work.html" class="work-entry" style="background-image: url(<?php echo base_url('assets_user/') ?>images/work-4.jpg);">
 							<div class="desc">
 								<div class="display-t">
 									<div class="display-tc">
@@ -269,12 +257,24 @@
 						</a>
 					</div>
 					<div class="col-md-4 no-gutters text-center animate-box">
+						<a href="work.html" class="work-entry" style="background-image: url(<?php echo base_url('assets_user/') ?>images/work-5.jpg);">
+							<div class="desc">
+								<div class="display-t">
+									<div class="display-tc">
+										<span>Fasilitas</span>
+										<h2>Tempat Setrika</h2>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 no-gutters text-center animate-box">
 						<a href="work.html" class="work-entry" style="background-image: url(<?php echo base_url('assets_user/') ?>images/work-6.jpg);">
 							<div class="desc">
 								<div class="display-t">
 									<div class="display-tc">
 										<span>Fasilitas</span>
-										<h2>Ruang TV</h2>
+										<h2>Tempat Jemuran</h2>
 									</div>
 								</div>
 							</div>

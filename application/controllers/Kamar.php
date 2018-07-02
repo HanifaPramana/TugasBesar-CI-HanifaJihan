@@ -62,7 +62,7 @@ class Kamar extends CI_Controller {
 		} else {
 			if ($_FILES['image']['name'] == "")
 			{
-				$this->m_Kamar->updateData($id);
+				$this->m_Kamar->update($id);
 				redirect('kamar');
 			}
 			else
