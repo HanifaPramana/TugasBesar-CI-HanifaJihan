@@ -4,36 +4,20 @@
         <div class="content-wrapper">
           <div class="row">
             <div class="col-12">
-              <span class="d-flex align-items-center purchase-popup">
+              <!-- <span class="d-flex align-items-center purchase-popup">
                 <p>Like what you see? Check out our premium version for more.</p>
                 <a href="https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template" target="_blank" class="btn ml-auto download-button">Download Free Version</a>
                 <a href="https://www.bootstrapdash.com/product/purple-bootstrap-4-admin-template/" target="_blank" class="btn purchase-button">Upgrade To Pro</a>
                 <i class="mdi mdi-close popup-dismiss"></i>
-              </span>
+              </span> -->
             </div>
-          </div>
-          <div class="page-header">
-            <h3 class="page-title">
-              <span class="page-title-icon bg-gradient-primary text-white mr-2">
-                <i class="mdi mdi-home"></i>                 
-              </span>
-              Dashboard
-            </h3>
-            <nav aria-label="breadcrumb">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">
-                  <span></span>Overview
-                  <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                </li>
-              </ul>
-            </nav>
           </div>
           <div class="row">
             <div class="col">
               <a href="<?php echo base_url('Kamar/insert') ?>" class="btn btn-sm btn-primary mb-3">Input</a>
               <div class="card">
               <div class="card-body">
-                <table class="table table-hover table-bordered">
+                <table id="example" class="table table-striped table-bordered" style="width:100%">
               <thead>
                 <th>#</th>
                 <th>No Kamar</th>

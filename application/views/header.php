@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="<?php echo base_url('assets_admin/') ?>vendors/iconfonts/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="<?php echo base_url('assets_admin/') ?>vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
+  <!-- datatables -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/datatable.css') ?>">
   <!-- inject:css -->
   <link rel="stylesheet" href="<?php echo base_url('assets_admin/') ?>css/style.css">
   <!-- endinject -->
