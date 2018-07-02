@@ -9,19 +9,9 @@
   <script src="<?php echo base_url('assets_admin/') ?>js/off-canvas.js"></script>
   <script src="<?php echo base_url('assets_admin/') ?>js/misc.js"></script>
   <!-- endinject -->
-
-<!-- Datatables -->
-<script type="text/javascript" src="<?php echo base_url('assets/js/datatable.js') ?>"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('#example').DataTable();
-} );
-</script>
-
   <!-- Custom js for this page-->
   <script src="<?php echo base_url('assets_admin/') ?>js/dashboard.js"></script>
   <!-- End custom js for this page-->
-
 </body>
 
 </html>
