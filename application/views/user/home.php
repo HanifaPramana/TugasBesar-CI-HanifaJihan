@@ -194,10 +194,10 @@
 					<div class="col-md-4 text-center animate-box">
 						<div class="services">
 							<span class="icon">
-								<i class="icon-aid-kit"></i>
+								<i class="icon-library"></i>
 							</span>
 							<div class="desc">
-								<h3>Tersedia Obat-Obatan</h3>
+								<h3>Gazebo Taman</h3>
 								<p></p>
 							</div>
 						</div>
