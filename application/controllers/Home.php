@@ -38,4 +38,12 @@ class Home extends CI_Controller {
 		$data['pembayaran'] = $this->m_Pembayaran->pembayaran($id);
 		$this->load->view('user/pembayaran',$data);
 	}
+	public function about()
+	{
+		$this->load->view('user/about');
+	}
+	public function contact()
+	{
+		$this->load->view('user/contact');
+	}
 }

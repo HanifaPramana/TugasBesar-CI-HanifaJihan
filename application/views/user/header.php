@@ -69,9 +69,9 @@
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li <?php if($this->uri->segment(2) == '') echo 'class="active"'; ?>><a href="<?php echo base_url('Home') ?>">Home</a></li>
+								<li <?php if($this->uri->segment(2) == 'about') echo 'class="active"'; ?>><a href="<?php echo base_url('Home/about') ?>">About</a></li>
+								<li <?php if($this->uri->segment(2) == 'contact') echo 'class="active"'; ?>><a href="<?php echo base_url('Home/contact') ?>">Contact</a></li>
 								<?php if ($this->session->userdata('logged_in') == null): ?>
 									<li class="btn-cta"><a href="<?php echo base_url('Login/penghuni') ?>" style="background-color: #f287e2;">Login Penghuni</a></li>
 									<li class="btn-cta"><a href="<?php echo base_url('Login') ?>">Login Admin</a></li>
