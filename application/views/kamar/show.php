@@ -2,16 +2,7 @@
 <?php $this->load->view('menu') ?>
       <div class="main-panel">
         <div class="content-wrapper">
-          <div class="row">
-            <div class="col-12">
-              <span class="d-flex align-items-center purchase-popup">
-                <p>Like what you see? Check out our premium version for more.</p>
-                <a href="https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template" target="_blank" class="btn ml-auto download-button">Download Free Version</a>
-                <a href="https://www.bootstrapdash.com/product/purple-bootstrap-4-admin-template/" target="_blank" class="btn purchase-button">Upgrade To Pro</a>
-                <i class="mdi mdi-close popup-dismiss"></i>
-              </span>
-            </div>
-          </div>
+          
           <div class="page-header">
             <h3 class="page-title">
               <span class="page-title-icon bg-gradient-primary text-white mr-2">
