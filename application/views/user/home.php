@@ -203,21 +203,46 @@
 					</div>
 				</div>
 				<div class="row">
-					<?php foreach ($kamar as $key => $value): ?>
 						<div class="col-md-4 animate-box">
 							<article class="article-entry">
 								<div class="desc2">
-									<h2><a href="blog.html">Kamar <?php echo $value->no_kamar ?></a></h2>
+									<h2><a href="blog.html">Kamar VIP</a></h2>
 								</div>
-								<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets/img/kamar/'.$value->image) ?>);"></a>
+								<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets/img/kamar/besar.jpg') ?>);"></a>
 								<div class="desc">
-									<p class="meta"><span class="day">No</span><span class="month"><?php echo $value->no_kamar ?></span></p>
-									<p>Fasilitas : <?php echo $value->fasilitas ?></p>
-									<p>Biaya per bulan : <?php echo $value->biaya_per_bulan ?></p>
+									<p>Fasilitas</p><br>
+									Kasur springbed 160x200/180x200, Lemari 2 pintu, Kamar mandi di dalam, Kloset duduk, Tv Led 32 inch, AC, Kursi dan meja, Listrik prabayar 900 watt, Tempat parkir mobil dan motor, Free wifi indihome 10 mbps, Free kopi dan teh tiap pagi
+									<p>Biaya per bulan : 1500000</p>
 								</div>
 							</article>
-						</div>
-					<?php endforeach ?>					
+						</div>	
+						<div class="col-md-4 animate-box">
+							<article class="article-entry">
+								<div class="desc2">
+									<h2><a href="blog.html">Kamar Besar</a></h2>
+								</div>
+								<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets/img/kamar/standart.png') ?>);"></a>
+								<div class="desc">
+									<p>Fasilitas</p><br>
+									Kasur 120×200, Lemari 2 pintu, AC, Karpet, Kursi dan meja, Listrik prabayar 900 watt, Tempat parkir mobil dan motor, Free wifi indihome 10 mbps, Free kopi dan teh tiap pagi
+									<p>Biaya per bulan : 100000</p>
+								</div>
+							</article>
+						</div>	
+						<div class="col-md-4 animate-box">
+							<article class="article-entry">
+								<div class="desc2">
+									<h2><a href="blog.html">Kamar Standart</a></h2>
+								</div>
+								<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets/img/kamar/kecil.jpg') ?>);"></a>
+								<div class="desc">
+									<p>Fasilitas</p><br>
+									
+									
+									<p class="">Biaya per bulan : 500000</p>
+								</div>
+							</article>
+						</div>				
 				</div>
 			</div>
 		</div>
