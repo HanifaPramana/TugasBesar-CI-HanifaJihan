@@ -6,7 +6,7 @@ $(function() {
     countries.unshift({ id: "0", name: "" });
 
     $("#jsGrid").jsGrid({
-      height: "300px",
+      height: "500px",
       width: "100%",
       filtering: true,
       inserting: true,
@@ -21,39 +21,33 @@ $(function() {
         loadData: function(filter) {
           return $.ajax({
             type: "GET",
-            url: "login_admin/getAll/",
+            url: "Login_admin/getAll/",
             data: filter
           });
         },
         insertItem: function(item) {
           return $.ajax({
             type: "POST",
-            url: "login_admin/insert/",
+            url: "Login_admin/add/",
             data: item
           });
         },
         updateItem: function(item) {
           return $.ajax({
             type: "POST",
-            url: "login_admin/update",
+            url: "Login_admin/update",
             data: item
           });
         },
         deleteItem: function(item) {
           return $.ajax({
             type: "POST",
-            url: "delete/",
+            url: "Login_admin/delete/",
             data: item
           });
         }
       },
       fields: [
-        {
-          name: "id",
-          title: "id",
-          type: "hidden",
-          width: 50
-        },
         {
           name: "username",
           title: "username",
@@ -64,7 +58,6 @@ $(function() {
           name: "password",
           title: "password ",
           type: "text",
-          type: "hidden",
           width: 150
         },
         {

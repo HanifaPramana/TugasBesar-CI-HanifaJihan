@@ -12,7 +12,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>x
 		<aside id="colorlib-hero">
 			<div class="container">
 				<div class="row">
@@ -198,8 +198,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Recent Blog</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+						<h2>Jenis Kamar</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -237,8 +236,7 @@
 								<a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url('assets/img/kamar/kecil.jpg') ?>);"></a>
 								<div class="desc">
 									<p>Fasilitas</p><br>
-									
-									
+									Kasur 120×200, Lemari 2 pintu, Kursi dan meja, Listrik prabayar 900 watt, Tempat parkir mobil dan motor, Free wifi indihome 10 mbps, Free kopi dan teh tiap pagi
 									<p class="">Biaya per bulan : 500000</p>
 								</div>
 							</article>

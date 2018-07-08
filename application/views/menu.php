@@ -1,7 +1,6 @@
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="index.html"><img src="<?php echo base_url('assets_admin/') ?>images/logo.svg" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="<?php echo base_url('assets_admin/') ?>images/logo-mini.svg" alt="logo"/></a>
+        
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         
@@ -52,7 +51,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="<?php echo site_url('Dashboard') ?>">
               <span class="menu-title">Dashboard</span>
               <i class="mdi mdi-home menu-icon"></i>
             </a>

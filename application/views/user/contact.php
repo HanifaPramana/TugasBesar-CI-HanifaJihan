@@ -21,13 +21,13 @@
 							<div class="col-md-12">
 								<div class="contact-info-wrap-flex">
 									<div class="con-info">
-										<p><span><i class="icon-location-2"></i></span> 198 West 21th Street, <br> Suite 721 New York NY 10016</p>
+										<p><span><i class="icon-location-2"></i></span> Jl.Ki Ageng Gribig Malang No.7 <br> Jawa Timur</p>
 									</div>
 									<div class="con-info">
-										<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+										<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+6281342776551</a></p>
 									</div>
 									<div class="con-info">
-										<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+										<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">kostbidadari@gmail.com</a></p>
 									</div>
 									<div class="con-info">
 										<p><span><i class="icon-globe"></i></span> <a href="#">yourwebsite.com</a></p>

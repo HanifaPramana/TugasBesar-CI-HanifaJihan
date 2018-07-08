@@ -23,7 +23,7 @@
               <a href="<?php echo base_url('Pembayaran/generate_to_pdf') ?>" class="btn btn-sm btn-primary mb-3">Print</a>
               <div class="card">
               <div class="card-body">
-                <table class="table table-hover table-bordered">
+                <table id="example" class="table table-striped table-bordered" style="width:100%">
               <thead>
                 <th>#</th>
                 <th>No Pembayaran</th>

@@ -77,7 +77,7 @@
 									<li class="btn-cta"><a href="<?php echo base_url('Login') ?>">Login Admin</a></li>
 								<?php else: ?>
 									<?php if ($this->session->userdata('logged_in')['level'] == 3): ?>
-										<li class="btn-cta" style="background-color: #ff8eee;"><a href="<?php echo base_url('Home/penghuni') ?>">Halaman Penghuni</a></li>
+										<li class="btn-cta"><a href="<?php echo base_url('Home/penghuni') ?>">Halaman Penghuni</a></li>
 										<li class="btn-cta"><a href="<?php echo base_url('Login/logout') ?>">Logout</a></li>
 									<?php else: ?>
 										<li class="btn-cta"><a href="<?php echo base_url('Kamar') ?>">Halaman Admin</a></li>
