@@ -41,7 +41,6 @@ class Penghuni extends CI_Controller {
 		$this->form_validation->set_rules('email','Email','required');
 		$this->form_validation->set_value('username', "Username",'required');
 		$this->form_validation->set_rules('password','password','required');
-		$this->form_validation->set_value('status',"Status",'required');
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('penghuni/insert',$data);
 		} else {
@@ -60,7 +59,6 @@ class Penghuni extends CI_Controller {
 		$this->form_validation->set_rules('email','Email','required');
 		$this->form_validation->set_value('username', "Username",'required');
 		$this->form_validation->set_rules('password','password','required');
-		$this->form_validation->set_value('status',"Status",'required');
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('penghuni/update',$data);
 		} else {

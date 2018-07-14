@@ -5,8 +5,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data['kamar'] = $this->db->get('kamar')->result();
-		$this->load->view('user/home',$data);
+		$this->load->view('user/home');
 	}
 	public function admin()
 	{
@@ -14,6 +13,9 @@ class Home extends CI_Controller {
 	}
 	public function penghuni()
 	{
+		if($this->session->userdata("logged_in") == null){
+			redirect('Home','refresh');
+		}
 		$id_penghuni = $this->session->userdata('logged_in')['id'];
 		$this->load->model('m_Pembayaran');
 		$data['list'] = $this->m_Pembayaran->get_num_mount($id_penghuni);

@@ -17,7 +17,12 @@ class m_Penghuni extends CI_Model {
 	}
 	public function select_kamar()
 	{
-		return $this->db->get('kamar')->result_array();
+		$this->db->select('kamar.*');
+		$this->db->from('kamar');
+		$this->db->join('penghuni_kos','kamar.id=penghuni_kos.fk_id_kamar','left');
+		$this->db->where('penghuni_kos.status',null);
+		$this->db->or_where('penghuni_kos.status',0);
+		return $this->db->get()->result_array();
 	}
 	public function insert()
 	{

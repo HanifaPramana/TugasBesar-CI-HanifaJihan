@@ -49,10 +49,7 @@
                  <label for="">Password</label>
                  <input type="text"  name="password" class="form-control">
                </div>
-               <div class="form-group">
-                 <label for="">Status</label>
-                 <input type="text"  name="status" class="form-control">
-               </div>
+               
                <div class="form-group">
                  <label for="">Kamar</label>
                  <select name="fk_id_kamar" id="" class="form-control">

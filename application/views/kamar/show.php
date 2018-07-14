@@ -24,7 +24,7 @@
               <a href="<?php echo base_url('Kamar/insert') ?>" class="btn btn-sm btn-primary mb-3">Input</a>
               <div class="card">
               <div class="card-body">
-                <table class="table table-hover table-bordered">
+                <table class="table table-hover table-bordered" id="example">
               <thead>
                 <th>#</th>
                 <th>No Kamar</th>

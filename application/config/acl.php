@@ -63,7 +63,7 @@ $acl = array(
 	'Kamar' => array(
 		'1' => true,
 		'2' => true,
-		'3' => true
+		'3' => false
 	),
 	'Penghuni' => array(
 		'1' => true,
@@ -78,7 +78,7 @@ $acl = array(
 	'kamar' => array(
 		'1' => true,
 		'2' => true,
-		'3' => true
+		'3' => false
 	),
 	'penghuni' => array(
 		'1' => true,

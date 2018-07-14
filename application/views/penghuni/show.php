@@ -44,7 +44,11 @@
                     <td><?php echo $value['notelp'] ?></td>
                     <td><?php echo $value['email'] ?></td>
                     <td><?php echo $value['username'] ?></td>
-                    <td><?php echo $value['status'] ?></td>
+                    <td><?php if ($value['status'] == 1): ?>
+                      Aktif
+                    <?php else: ?>
+                      Tidak Aktif
+                    <?php endif ?></td>
                     <td><?php echo ($value['no_kamar'] != null ? $value['no_kamar'] : 'Telah Keluar') ?></td>
                     <td>
                       <a href="<?php echo base_url('penghuni/update_keluar/'.$value['id']) ?>" class="btn btn-sm btn-warning">Exit</a>
